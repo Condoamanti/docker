@@ -1,0 +1,4 @@
+DockerCI {
+    imageName = "centos"
+    imageTag = "centos7"
+}
