@@ -5,5 +5,5 @@ DockerCI {
     maintainer = "Condoamanti Condoamanti@gmail.com"
     update = true
     upgrade = false
-    packages = "epel-release", "golang", "git"
+    packages = ["epel-release", "golang", "git"]
 }
