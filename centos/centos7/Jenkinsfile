@@ -1,4 +1,7 @@
 DockerCI {
     imageName = "centos"
     imageTag = "centos7"
+    update = true
+    upgrade = false
+    packages = ["epel-release", "golang", "git"]
 }
