@@ -1,4 +1,5 @@
 DockerCI {
+    fileName = "Dockerfile"
     imageName = "centos"
     imageTag = "centos7"
     maintainer = "Condoamanti Condoamanti@gmail.com"
