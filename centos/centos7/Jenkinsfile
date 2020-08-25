@@ -1,8 +1,7 @@
 DockerCI {
     imageName = "centos"
     imageTag = "centos7"
-    maintainerName = "Condoamanti"
-    maintainerEmail = "Condoamanti@gmail.com"
+    maintainer = "Condoamanti Condoamanti@gmail.com"
     update = true
     upgrade = false
     packages = ["epel-release", "golang", "git"]
