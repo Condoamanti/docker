@@ -8,4 +8,6 @@ DockerCI {
     packages = ["golang", "git"]
     imageDestinationName = "condoamanti"
     imageDestinationTag = "centos7"
+    imageDestinationRepositoryName = "test"
+    imageDestinationRepositoryUrl = "docker.io"
 }
