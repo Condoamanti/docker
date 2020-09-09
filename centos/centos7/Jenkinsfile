@@ -6,7 +6,12 @@ DockerCI {
     update = true
     upgrade = false
     packages = ["epel-release", "golang", "git"]
-    imageDestinationName = "condoamanti/test"
+
+    // k8snode1dc1.jittersolutions.com:32382/docker-local/test:centos7
+    //imageDestinationName = "condoamanti/test"
+    //imageDestinationTag = "centos7"
+    //imageDestinationRepositoryUrl = "docker.io"
+    imageDestinationName = "k8snode1dc1.jittersolutions.com:32382/docker-local/centos"
     imageDestinationTag = "centos7"
-    imageDestinationRepositoryUrl = "docker.io"
+    imageDestinationRepositoryUrl = "k8snode1dc1.jittersolutions.com:32382"
 }
