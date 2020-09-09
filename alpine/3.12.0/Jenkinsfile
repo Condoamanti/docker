@@ -1,7 +1,7 @@
 DockerCI {
     fileName = "Dockerfile"
-    imageSourceName = "centos"
-    imageSourceTag = "centos7"
+    imageSourceName = "alpine"
+    imageSourceTag = "3.12.0"
     maintainer = "Condoamanti Condoamanti@gmail.com"
     update = true
     upgrade = false
