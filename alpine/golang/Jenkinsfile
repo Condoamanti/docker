@@ -1,16 +1,17 @@
 DockerCI {
     fileName = "Dockerfile"
     imageSourceName = "alpine"
-    imageSourceTag = "3.12.0"
+    imageSourceTag = "latest"
     maintainer = "Condoamanti Condoamanti@gmail.com"
     update = true
-    upgrade = false
-    packages = ["epel-release", "golang", "git"]
-    imageDestinationName = "k8snode1dc1.jittersolutions.com:32382/docker-local/centos"
+    upgrade = true
+    packages = ["git", "make", "go"]
+    environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH"]
+    imageDestinationName = "k8snode1dc1.jittersolutions.com:32382/docker-local/alpine"
     // Can be any of the following
     // - condoamanati/*
     // - "k8snode1dc1.jittersolutions.com:32382/docker-local/*"
-    imageDestinationTag = "centos7"
+    imageDestinationTag = "golang"
     imageDestinationRepositoryUrl = "k8snode1dc1.jittersolutions.com:32382"
     // Can be any of the following
     // - docker.io
