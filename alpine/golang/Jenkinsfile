@@ -7,6 +7,7 @@ DockerCI {
     upgrade = true
     packages = ["git", "make", "go"]
     environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH"]
+    runComamnds = ["mkdir -p \${GOPATH}/src \${GOPATH}/bin"]
     imageDestinationName = "artifactory.jittersolutions.com/docker-local/alpine"
     // Can be any of the following
     // - condoamanati/*
