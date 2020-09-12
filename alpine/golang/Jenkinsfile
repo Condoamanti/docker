@@ -7,12 +7,12 @@ DockerCI {
     upgrade = true
     packages = ["git", "make", "go"]
     environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH"]
-    imageDestinationName = "k8snode1dc1.jittersolutions.com:32382/docker-local/alpine"
+    imageDestinationName = "artifactory.jittersolutions.com/docker-local/alpine"
     // Can be any of the following
     // - condoamanati/*
     // - "k8snode1dc1.jittersolutions.com:32382/docker-local/*"
     imageDestinationTag = "golang"
-    imageDestinationRepositoryUrl = "k8snode1dc1.jittersolutions.com:32382"
+    imageDestinationRepositoryUrl = "artifactory.jittersolutions.com"
     // Can be any of the following
     // - docker.io
     // - k8snode1dc1.jittersolutions.com:32382
