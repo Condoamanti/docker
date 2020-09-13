@@ -12,10 +12,10 @@ DockerCI {
     // Can be any of the following
     // - docker.io
     // - artifactory.jittersolutions.com
-    imageDestinationName = "docker-local/alpine"
+    imageDestinationName = "docker-local/alpine-golang"
     // Can be any of the following
     // - condoamanati/*
     // - "docker-local/*"
-    imageDestinationTag = "golang"
+    //imageDestinationTag = "golang"
 
 }
