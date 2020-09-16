@@ -7,7 +7,7 @@ DockerCI {
     upgrade = true
     packages = ["curl", "git", "make", "go"]
     environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH"]
-    additionalCommands = ["mkdir -p \${GOPATH}/src \${GOPATH}/bin"]
+    additionalCommands = ["curl", "mkdir -p \${GOPATH}/src \${GOPATH}/bin"]
     imageDestinationRepositoryUrl = "artifactory.jittersolutions.com"
     // Can be any of the following
     // - docker.io
