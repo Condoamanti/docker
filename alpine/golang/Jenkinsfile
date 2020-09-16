@@ -9,7 +9,7 @@ DockerCI {
     environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH", "PATH /jfrog/bin:\$PATH"]
     additionalCommands = [
         "mkdir -p \${GOPATH}/src \${GOPATH}/bin",
-        "mkdir /jfrog/bin",
+        "mkdir -p /jfrog/bin",
         "/usr/bin/curl -fLs https://api.bintray.com/content/jfrog/jfrog-cli-go/\\\$latest/jfrog-cli-linux-amd64/jfrog?bt_package=jfrog-cli-linux-amd64 -o /jfrog/bin/jfrog",
         "chmod u+x /jfrog/bin/jfrog"
     ]
