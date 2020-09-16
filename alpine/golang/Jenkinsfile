@@ -5,9 +5,9 @@ DockerCI {
     maintainer = "Condoamanti Condoamanti@gmail.com"
     update = true
     upgrade = true
-    packages = ["git", "make", "go"]
+    packages = ["curl", "git", "make", "go"]
     environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH"]
-    additionalCommands = ["mkdir -p \${GOPATH}/src \${GOPATH}/bin"]
+    additionalCommands = ["mkdir -p \${GOPATH}/src \${GOPATH}/bin", "/usr/bin/curl -fLs https://api.bintray.com/content/jfrog/jfrog-cli-go/\\\$latest/jfrog-cli-linux-amd64/jfrog?bt_package=jfrog-cli-linux-amd64 -o /usr/bin/jfrog", "chmod u+x /usr/bin/jfrog"]
     imageDestinationRepositoryUrl = "artifactory.jittersolutions.com"
     // Can be any of the following
     // - docker.io
