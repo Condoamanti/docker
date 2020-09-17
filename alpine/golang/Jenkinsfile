@@ -6,7 +6,7 @@ DockerCI {
     update = true
     upgrade = true
     packages = ["curl", "git", "make", "go"]
-    environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH"]
+    environmentVariables = ["GOROOT /usr/lib/go", "GOPATH /go", "PATH /go/bin:\$PATH", "JFROG_CLI_OFFER_CONFIG false"]
     additionalCommands = [
         "mkdir -p \${GOPATH}/src \${GOPATH}/bin",
         "/usr/bin/curl -fLs https://api.bintray.com/content/jfrog/jfrog-cli-go/\\\$latest/jfrog-cli-linux-amd64/jfrog?bt_package=jfrog-cli-linux-amd64 -o /usr/bin/jfrog",
