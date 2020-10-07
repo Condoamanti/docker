@@ -1,0 +1,20 @@
+DockerCI {
+    fileName = "Dockerfile"
+    imageSourceName = "alpine"
+    imageSourceTag = "latest"
+    maintainer = "Condoamanti Condoamanti@gmail.com"
+    update = true
+    upgrade = true
+    packages = ["curl"]
+    environmentVariables = []
+    additionalCommands = []
+    imageDestinationRepositoryUrl = "docker.io"
+    // Can be any of the following
+    // - docker.io
+    // - artifactory.jittersolutions.com
+    imageDestinationName = "condoamanti/alpine-kubelet"
+    // Can be any of the following
+    // - condoamanati/*
+    // - "docker-local/*"
+    imageDestinationTag = "latest"
+}
