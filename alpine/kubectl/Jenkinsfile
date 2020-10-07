@@ -12,7 +12,7 @@ DockerCI {
         "chmod +x ./kubectl",
         "mv ./kubectl /usr/local/bin/kubectl"
     ]
-    entryPoint = ["/usr/local/bin/kubectl"]
+    entryPoint = ["./usr/local/bin/kubectl"]
     imageDestinationRepositoryUrl = "docker.io"
     // Can be any of the following
     // - docker.io
