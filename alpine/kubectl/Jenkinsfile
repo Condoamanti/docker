@@ -12,7 +12,7 @@ DockerCI {
     // Can be any of the following
     // - docker.io
     // - artifactory.jittersolutions.com
-    imageDestinationName = "condoamanti/alpine-kubelet"
+    imageDestinationName = "condoamanti/alpine-kubectl"
     // Can be any of the following
     // - condoamanati/*
     // - "docker-local/*"
